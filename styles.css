@@ -3287,3 +3287,54 @@ h1, h2, h3 {
   .cta-strip__inner { flex-direction: column; text-align: center; }
   .reviews__tab { padding: 8px 14px; font-size: 12px; }
 }
+
+/* ===== COLLEGE FACTS ===== */
+.facts__lead {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+.facts__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.facts__item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--grey-2);
+  transition:
+    box-shadow var(--t-ui) var(--ease),
+    transform var(--t-ui) var(--ease);
+}
+.facts__item:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.facts__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.facts__item h3 {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+.facts__item p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+@media (max-width: 1024px) {
+  .facts__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .facts__grid { grid-template-columns: 1fr; }
+}
