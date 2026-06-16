@@ -233,22 +233,29 @@
       <div class="program-card-shell">
         <div class="program-card">
           <div class="program-card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M8 38V18l16-8 16 8v20" stroke="#C9A84C" stroke-width="2.5" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="10" rx="1" stroke="#C9A84C" stroke-width="2.5"/><path d="M20 24h8M24 20v4" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="6" stroke="#C9A84C" stroke-width="2.5"/>
+              <circle cx="8" cy="13" r="3.5" stroke="#C9A84C" stroke-width="2"/>
+              <circle cx="40" cy="13" r="3.5" stroke="#C9A84C" stroke-width="2"/>
+              <circle cx="8" cy="35" r="3.5" stroke="#C9A84C" stroke-width="2"/>
+              <circle cx="40" cy="35" r="3.5" stroke="#C9A84C" stroke-width="2"/>
+              <path d="M11.2 14.8l6.8 6M30 27.2l6.8 6.1M11.2 33.2l6.8-6M30 20.8l6.8-6.1" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
           </div>
-          <div class="program-card__tag" data-ru="Финансы" data-kz="Қаржы">Финансы</div>
-          <h3 class="program-card__title" data-ru="Бухгалтерский учёт" data-kz="Бухгалтерлік есеп">Бухгалтерский учёт</h3>
-          <p class="program-card__desc" data-ru="Стабильная профессия с гарантированным спросом. 1С, МСФО, налоговый учёт — всё с нуля до уровня специалиста." data-kz="Тұрақты кәсіп, сұраныс кепілдендірілген. 1С, ХҚЕС, салық есебі — нөлден маман деңгейіне дейін.">Стабильная профессия с гарантированным спросом. 1С, МСФО, налоговый учёт — всё с нуля до уровня специалиста.</p>
+          <div class="program-card__tag" data-ru="Искусственный интеллект" data-kz="Жасанды интеллект">Искусственный интеллект</div>
+          <h3 class="program-card__title" data-ru="AI & Автоматизация" data-kz="AI & Автоматизация">AI & Автоматизация</h3>
+          <p class="program-card__desc" data-ru="Вайб-кодинг, AI-агенты, ассистенты и автоматизация процессов. Профессия будущего — уже сегодня." data-kz="Вайб-кодинг, AI-агенттер, ассистенттер және процестерді автоматтандыру. Болашақ мамандығы — бүгін.">Вайб-кодинг, AI-агенты, ассистенты и автоматизация процессов. Профессия будущего — уже сегодня.</p>
           <div class="program-card__stats">
             <div class="program-card__stat">
-              <span class="program-card__stat-num">92%</span>
-              <span class="program-card__stat-label" data-ru="трудоустройство" data-kz="жұмысқа орналасу">трудоустройство</span>
+              <span class="program-card__stat-num">×5</span>
+              <span class="program-card__stat-label" data-ru="рост рынка ИИ" data-kz="ЖИ нарығы өсімі">рост рынка ИИ</span>
             </div>
             <div class="program-card__stat">
               <span class="program-card__stat-num">2г 10м</span>
               <span class="program-card__stat-label" data-ru="с 9 кл." data-kz="9 сыныптан">с 9 кл.</span>
             </div>
           </div>
-          <button class="btn btn--gold prog-open-btn" data-modal="accounting" data-ru="Узнать подробнее" data-kz="Толығырақ білу">Узнать подробнее <span class="btn__icon">→</span></button>
+          <button class="btn btn--gold prog-open-btn" data-modal="ai" data-ru="Узнать подробнее" data-kz="Толығырақ білу">Узнать подробнее <span class="btn__icon">→</span></button>
         </div>
       </div>
 
@@ -1117,33 +1124,33 @@
   </div>
 </div>
 
-<!-- Accounting Modal -->
-<div class="prog-modal" id="prog-modal-accounting" role="dialog" aria-modal="true" aria-labelledby="prog-modal-acc-title">
+<!-- AI Modal -->
+<div class="prog-modal" id="prog-modal-ai" role="dialog" aria-modal="true" aria-labelledby="prog-modal-ai-title">
   <div class="prog-modal__overlay"></div>
   <div class="prog-modal__panel">
     <div class="prog-modal__header">
       <div class="prog-modal__top-row">
-        <span class="prog-modal__tag" data-ru="Финансы" data-kz="Қаржы">Финансы</span>
+        <span class="prog-modal__tag" data-ru="Искусственный интеллект" data-kz="Жасанды интеллект">Искусственный интеллект</span>
         <button class="prog-modal__close" aria-label="Закрыть">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
       </div>
-      <h2 class="prog-modal__title" id="prog-modal-acc-title" data-ru="Бухгалтерский учёт" data-kz="Бухгалтерлік есеп">Бухгалтерский учёт</h2>
-      <p class="prog-modal__lead" data-ru="Одна из самых стабильных профессий в Казахстане. 92% выпускников трудоустроены. Полное владение 1С, МСФО и налоговым учётом." data-kz="Қазақстандағы ең тұрақты мамандықтардың бірі. Түлектердің 92%-ы жұмысқа орналасады.">Одна из самых стабильных профессий в Казахстане. 92% выпускников трудоустроены. Полное владение 1С, МСФО и налоговым учётом.</p>
+      <h2 class="prog-modal__title" id="prog-modal-ai-title" data-ru="AI & Автоматизация" data-kz="AI & Автоматизация">AI & Автоматизация</h2>
+      <p class="prog-modal__lead" data-ru="Вайб-кодинг, AI-агенты, умные ассистенты и автоматизация бизнес-процессов. Самая востребованная профессия ближайшего десятилетия." data-kz="Вайб-кодинг, AI-агенттер, ақылды ассистенттер және бизнес-процестерді автоматтандыру. Келесі онжылдықтың ең сұранысты мамандығы.">Вайб-кодинг, AI-агенты, умные ассистенты и автоматизация бизнес-процессов. Самая востребованная профессия ближайшего десятилетия.</p>
     </div>
     <div class="prog-modal__body">
 
       <div class="prog-modal__stats-row">
-        <div class="prog-modal__stat"><span class="prog-modal__stat-num">92%</span><span class="prog-modal__stat-label" data-ru="трудоустройство" data-kz="жұмысқа орналасу">трудоустройство</span></div>
+        <div class="prog-modal__stat"><span class="prog-modal__stat-num">×5</span><span class="prog-modal__stat-label" data-ru="рост рынка ИИ" data-kz="ЖИ нарығы өсімі">рост рынка ИИ</span></div>
         <div class="prog-modal__stat"><span class="prog-modal__stat-num">2г 10м</span><span class="prog-modal__stat-label" data-ru="срок (9 кл.)" data-kz="мерзім (9 сынып)">срок (9 кл.)</span></div>
-        <div class="prog-modal__stat"><span class="prog-modal__stat-num">1С</span><span class="prog-modal__stat-label" data-ru="сертификат включён" data-kz="сертификат кіреді">сертификат включён</span></div>
-        <div class="prog-modal__stat"><span class="prog-modal__stat-num">280к+</span><span class="prog-modal__stat-label" data-ru="зарплата выпускника" data-kz="түлек жалақысы">зарплата выпускника</span></div>
+        <div class="prog-modal__stat"><span class="prog-modal__stat-num">500к+</span><span class="prog-modal__stat-label" data-ru="зарплата выпускника" data-kz="түлек жалақысы">зарплата выпускника</span></div>
+        <div class="prog-modal__stat"><span class="prog-modal__stat-num">100%</span><span class="prog-modal__stat-label" data-ru="цифровое будущее" data-kz="цифрлық болашақ">цифровое будущее</span></div>
       </div>
 
       <div class="prog-modal__info-grid">
         <div class="prog-modal__info-item">
           <span class="prog-modal__info-label" data-ru="Квалификация" data-kz="Біліктілік">Квалификация</span>
-          <span class="prog-modal__info-value" data-ru="Бухгалтер" data-kz="Бухгалтер">Бухгалтер</span>
+          <span class="prog-modal__info-value" data-ru="AI-разработчик / Специалист по автоматизации" data-kz="AI-әзірлеуші / Автоматтандыру маманы">AI-разработчик / Автоматизатор</span>
         </div>
         <div class="prog-modal__info-item">
           <span class="prog-modal__info-label" data-ru="Диплом" data-kz="Диплом">Диплом</span>
@@ -1154,12 +1161,16 @@
           <span class="prog-modal__info-value">Казахский / Русский</span>
         </div>
         <div class="prog-modal__info-item">
-          <span class="prog-modal__info-label" data-ru="Программные курсы" data-kz="Бағдарламалық курстар">Программные курсы</span>
-          <span class="prog-modal__info-value">1С, Excel Pro, SAP basics</span>
+          <span class="prog-modal__info-label" data-ru="Инструменты" data-kz="Құралдар">Инструменты</span>
+          <span class="prog-modal__info-value">Python, ChatGPT API, n8n, Make</span>
         </div>
         <div class="prog-modal__info-item">
           <span class="prog-modal__info-label" data-ru="Срок обучения" data-kz="Оқу мерзімі">Срок обучения</span>
           <span class="prog-modal__info-value" data-ru="9 кл. — 2 г. 10 мес. / 11 кл. — 1 г. 10 мес." data-kz="9 сынып — 2 жыл 10 ай / 11 сынып — 1 жыл 10 ай">9 кл. — 2 г. 10 мес. / 11 кл. — 1 г. 10 мес.</span>
+        </div>
+        <div class="prog-modal__info-item">
+          <span class="prog-modal__info-label" data-ru="База поступления" data-kz="Оқуға түсу негізі">База поступления</span>
+          <span class="prog-modal__info-value" data-ru="9 класс или 11 класс" data-kz="9-сынып немесе 11-сынып">9 класс или 11 класс</span>
         </div>
       </div>
 
@@ -1169,30 +1180,30 @@
           <div class="prog-modal__year">
             <div class="prog-modal__year-badge" data-ru="1 курс" data-kz="1 курс">1 курс</div>
             <div class="prog-modal__subjects">
-              <span data-ru="Основы бухгалтерского учёта и отчётности" data-kz="Бухгалтерлік есеп және есептілік негіздері">Основы бухгалтерского учёта и отчётности</span>
-              <span data-ru="1С Бухгалтерия (базовый уровень)" data-kz="1С Бухгалтерия (базалық деңгей)">1С Бухгалтерия (базовый уровень)</span>
-              <span data-ru="Налоговое законодательство Казахстана" data-kz="Қазақстан салық заңнамасы">Налоговое законодательство Казахстана</span>
-              <span data-ru="Экономика предприятия и финансы" data-kz="Кәсіпорын экономикасы және қаржы">Экономика предприятия и финансы</span>
-              <span data-ru="Microsoft Excel для бухгалтера" data-kz="Бухгалтер үшін Microsoft Excel">Microsoft Excel для бухгалтера</span>
+              <span data-ru="Основы Python и алгоритмического мышления" data-kz="Python негіздері және алгоритмдік ойлау">Основы Python и алгоритмического мышления</span>
+              <span data-ru="Введение в машинное обучение (ML)" data-kz="Машиналық оқуға кіріспе (ML)">Введение в машинное обучение (ML)</span>
+              <span data-ru="Работа с ИИ-инструментами: ChatGPT API, Copilot, Claude" data-kz="ЖИ-құралдармен жұмыс: ChatGPT API, Copilot, Claude">Работа с ИИ-инструментами: ChatGPT API, Copilot</span>
+              <span data-ru="Основы автоматизации: n8n, Make (Integromat), Zapier" data-kz="Автоматтандыру негіздері: n8n, Make, Zapier">Основы автоматизации: n8n, Make, Zapier</span>
+              <span data-ru="Базы данных и работа с данными" data-kz="Деректер қоры және деректермен жұмыс">Базы данных и работа с данными</span>
             </div>
           </div>
           <div class="prog-modal__year">
             <div class="prog-modal__year-badge" data-ru="2 курс" data-kz="2 курс">2 курс</div>
             <div class="prog-modal__subjects">
-              <span data-ru="МСФО (международные стандарты финансовой отчётности)" data-kz="ХҚЕС (халықаралық қаржылық есептілік стандарттары)">МСФО (международные стандарты)</span>
-              <span data-ru="Управленческий учёт и бюджетирование" data-kz="Басқарушылық есеп және бюджеттеу">Управленческий учёт и бюджетирование</span>
-              <span data-ru="Налоговая отчётность и КНП" data-kz="Салық есептілігі және КНП">Налоговая отчётность и КНП</span>
-              <span data-ru="Аудит и внутренний контроль" data-kz="Аудит және ішкі бақылау">Аудит и внутренний контроль</span>
-              <span data-ru="1С Бухгалтерия (продвинутый уровень)" data-kz="1С Бухгалтерия (жоғары деңгей)">1С Бухгалтерия (продвинутый уровень)</span>
+              <span data-ru="Разработка AI-агентов и чат-ботов" data-kz="AI-агенттер мен чат-боттар әзірлеу">Разработка AI-агентов и чат-ботов</span>
+              <span data-ru="Промпт-инжиниринг и вайб-кодинг" data-kz="Промпт-инжиниринг және вайб-кодинг">Промпт-инжиниринг и вайб-кодинг</span>
+              <span data-ru="Автоматизация бизнес-процессов (RPA, низкокодовые платформы)" data-kz="Бизнес-процестерді автоматтандыру (RPA)">Автоматизация бизнес-процессов (RPA)</span>
+              <span data-ru="Компьютерное зрение и NLP на практике" data-kz="Практикадағы компьютерлік көру мен NLP">Компьютерное зрение и NLP на практике</span>
+              <span data-ru="Практика: реальные AI-проекты с партнёрами" data-kz="Тәжірибе: серіктестермен нақты AI-жобалар">Практика: реальные AI-проекты с партнёрами</span>
             </div>
           </div>
           <div class="prog-modal__year">
             <div class="prog-modal__year-badge" data-ru="3 курс" data-kz="3 курс">3 курс</div>
             <div class="prog-modal__subjects">
-              <span data-ru="Практика на предприятии (банк, компания)" data-kz="Кәсіпорында тәжірибе (банк, компания)">Практика на предприятии (банк, компания)</span>
-              <span data-ru="Налоговое планирование и оптимизация" data-kz="Салық жоспарлау және оңтайландыру">Налоговое планирование и оптимизация</span>
-              <span data-ru="Подготовка к аттестации профессиональных бухгалтеров" data-kz="Кәсіби бухгалтерлер аттестациясына дайындық">Подготовка к аттестации бухгалтеров</span>
-              <span data-ru="Дипломный проект + трудоустройство" data-kz="Дипломдық жоба + жұмысқа орналасу">Дипломный проект + трудоустройство</span>
+              <span data-ru="Разработка корпоративных AI-ассистентов" data-kz="Корпоративтік AI-ассистенттерді әзірлеу">Разработка корпоративных AI-ассистентов</span>
+              <span data-ru="Мультиагентные системы и оркестрация ИИ" data-kz="Мультиагенттік жүйелер және ЖИ оркестрациясы">Мультиагентные системы и оркестрация ИИ</span>
+              <span data-ru="Стажировка в IT / AI компании" data-kz="IT / AI компаниясында тағылымдама">Стажировка в IT / AI компании</span>
+              <span data-ru="Дипломный проект + оффер от работодателя" data-kz="Дипломдық жоба + жұмыс берушіден ұсыныс">Дипломный проект + оффер от работодателя</span>
             </div>
           </div>
         </div>
@@ -1201,30 +1212,30 @@
       <div class="prog-modal__section">
         <h3 data-ru="Кем вы станете" data-kz="Кім боласыз">Кем вы станете</h3>
         <div class="prog-modal__careers">
-          <div class="prog-modal__career-item">📊 <span data-ru="Главный бухгалтер компании" data-kz="Компанияның бас бухгалтері">Главный бухгалтер компании</span></div>
-          <div class="prog-modal__career-item">💰 <span data-ru="Финансовый аналитик" data-kz="Қаржылық аналитик">Финансовый аналитик</span></div>
-          <div class="prog-modal__career-item">🏛️ <span data-ru="Налоговый консультант" data-kz="Салық кеңесшісі">Налоговый консультант</span></div>
-          <div class="prog-modal__career-item">🔍 <span data-ru="Аудитор" data-kz="Аудитор">Аудитор</span></div>
-          <div class="prog-modal__career-item">📈 <span data-ru="Специалист по МСФО" data-kz="ХҚЕС маманы">Специалист по МСФО</span></div>
-          <div class="prog-modal__career-item">🏦 <span data-ru="Бухгалтер в банке / нацкомпании" data-kz="Банктегі / ұлттық компаниядағы бухгалтер">Бухгалтер в банке / нацкомпании</span></div>
+          <div class="prog-modal__career-item">🤖 <span data-ru="AI-разработчик / ML-инженер" data-kz="AI-әзірлеуші / ML-инженер">AI-разработчик / ML-инженер</span></div>
+          <div class="prog-modal__career-item">⚙️ <span data-ru="Специалист по автоматизации бизнес-процессов" data-kz="Бизнес-процестерді автоматтандыру маманы">Специалист по автоматизации</span></div>
+          <div class="prog-modal__career-item">💬 <span data-ru="Разработчик чат-ботов и AI-агентов" data-kz="Чат-боттар мен AI-агенттер әзірлеушісі">Разработчик чат-ботов и AI-агентов</span></div>
+          <div class="prog-modal__career-item">✍️ <span data-ru="Prompt-инженер" data-kz="Промпт-инженер">Prompt-инженер</span></div>
+          <div class="prog-modal__career-item">📊 <span data-ru="Data Analyst / BI-специалист" data-kz="Data Analyst / BI-маман">Data Analyst / BI-специалист</span></div>
+          <div class="prog-modal__career-item">🚀 <span data-ru="Цифровой трансформатор бизнеса" data-kz="Бизнестің цифрлық трансформаторы">Цифровой трансформатор бизнеса</span></div>
         </div>
       </div>
 
       <div class="prog-modal__section">
         <h3 data-ru="Где работают наши выпускники" data-kz="Түлектеріміз қайда жұмыс істейді">Где работают наши выпускники</h3>
         <div class="prog-modal__partners">
-          <div class="prog-modal__partner">Halyk Bank</div>
-          <div class="prog-modal__partner">Kaspi Bank</div>
-          <div class="prog-modal__partner">Freedom Finance</div>
-          <div class="prog-modal__partner">КазМунайГаз</div>
-          <div class="prog-modal__partner">Beeline Kazakhstan</div>
-          <div class="prog-modal__partner">Deloitte CIS</div>
+          <div class="prog-modal__partner">Kaspi Tech</div>
+          <div class="prog-modal__partner">EPAM Systems</div>
+          <div class="prog-modal__partner">Choco Family</div>
+          <div class="prog-modal__partner">Jusan Bank</div>
+          <div class="prog-modal__partner">Beeline Digital</div>
+          <div class="prog-modal__partner">AI Стартапы / Фриланс</div>
         </div>
       </div>
 
     </div>
     <div class="prog-modal__footer">
-      <a href="https://wa.me/77013563551?text=Здравствуйте!%20Хочу%20записаться%20на%20программу%20Бухгалтерский%20учёт" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-ru="Записаться на программу" data-kz="Бағдарламаға жазылу">
+      <a href="https://wa.me/77013563551?text=Здравствуйте!%20Хочу%20записаться%20на%20программу%20AI%20%26%20Автоматизация" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-ru="Записаться на программу" data-kz="Бағдарламаға жазылу">
         Записаться на программу
         <span class="btn__icon">→</span>
       </a>

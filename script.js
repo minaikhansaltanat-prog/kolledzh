@@ -346,7 +346,7 @@ if (form) {
     const dirLabels = {
       'it':         'IT & Разработка',
       'management': 'Туризм & Менеджмент',
-      'accounting': 'Бухгалтерский учёт',
+      'ai':         'AI & Автоматизация',
       'personal':   'Личный вопрос',
     };
     const dirText = dirLabels[direction] || direction;
@@ -389,7 +389,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 const MODAL_MAP = {
   'it':         'prog-modal-it',
   'tourism':    'prog-modal-tourism',
-  'accounting': 'prog-modal-accounting',
+  'ai':         'prog-modal-ai',
 };
 
 let activeProgModal = null;
