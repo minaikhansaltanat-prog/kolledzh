@@ -1247,13 +1247,51 @@ h1, h2, h3 {
   text-shadow: 0 1px 6px rgba(255, 255, 255, 0.65);
 }
 
-/* Grid layout — unchanged */
+/* Grid layout */
 .intl__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 48px;
   margin-bottom: 28px;
+}
+.intl__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* China card highlight */
+.intl__card-shell--china {
+  border-color: rgba(201, 168, 76, 0.55);
+}
+.intl__card-shell--china .intl__card {
+  background: rgba(255, 248, 225, 0.65);
+}
+.intl__grant-badge {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 5px 14px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+
+.intl__grid--4 .intl__card {
+  padding: 28px 16px;
+}
+.intl__grid--4 .intl__flag { font-size: 36px; margin-bottom: 12px; }
+.intl__grid--4 .intl__card h3 { font-size: 16px; }
+.intl__grid--4 .intl__card p { font-size: 12.5px; }
+
+@media (max-width: 1100px) {
+  .intl__grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .intl__grid--4 .intl__card { padding: 32px 20px; }
+  .intl__grid--4 .intl__flag { font-size: 40px; }
+}
+@media (max-width: 540px) {
+  .intl__grid--4 { grid-template-columns: 1fr; }
 }
 
 /* Step 5: card shells — glass ring */
